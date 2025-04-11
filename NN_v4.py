@@ -18,21 +18,18 @@ from tensorflow.keras.layers import Dense, Dropout, BatchNormalization, Input, L
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras import backend as K
-from tensorflow.keras.layers import SpatialDropout1D
 from sklearn.datasets import load_iris, load_wine, load_breast_cancer, fetch_openml
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import RobustScaler
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score, precision_score, recall_score
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier, ExtraTreesClassifier
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.feature_selection import SelectKBest, f_classif, mutual_info_classif
+from sklearn.feature_selection import SelectKBest, f_classif
 import pickle
 import os
 import warnings
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
-import optuna
 from scipy import stats
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 import joblib
